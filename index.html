@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center;background-color: hsl(260, 8%, 14%) }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="left-side-nav">
+    <a href="/"><img src="images/logo.svg" alt="Shortly"></a>
+    <nav>
+      <ul>
+       <li><a href="/"> Features</a></li>
+       <li><a href="/"> Pricing</a></li>
+       <li><a href="/"> Resources</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="auth-links">
+    <a href="/"> Login</a>
+    <div class="sign-up"><a href="/"> Sign Up</a></div>
+  </div>
+  <img class="main-nav"src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAzklEQVRYR+2XwQ2AIAxFZSM3kk3UTXQjR7IcTDwopLTUFD8JiQfa/3mUEsPgcASHngeYtjo1kAbpDAGUB8rjb+URacOT1bHfdHb63t50SxdxocD5A9MraSbtxwHTiiciIq3oQy9VqTz0lBQzwbQizGyqLkmPtOU0rcdBgmmiT7cmL+rTLp9xlzXdugyq8nfZ8qpItA4C6daEr/wl0i5bHkwzykf0IkYScvc3zoBjt7R0Ee2cMJRgmgFLtBSkRfgYwSDNgCVaCtIifIxgl6RPfu0aLifIKVcAAAAASUVORK5CYII="/>
+</header>
+
+<nav class="mobile-nav">
+  <img class="mobile-toggle" src="images/x.png" width="50px"/>
+  <ul>
+   <li><a href="/"> Features</a></li>
+   <li><a href="/"> Pricing</a></li>
+   <li><a href="/"> Resources</a></li>
+   <li><a href="/"> Sign Up</a></li>
+   <li><a href="/"> Login</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section class="main-text">
+    <h1>More than just shorter links</h1>
+    <p>Build your brand’s recognition and get detailed insights
+    on how your links are performing.</p>
+    
+     <a href="/"> Get Started</a>
+  </section>
+
+ <img src="images/illustration-working.svg" alt="lady sitting at computer desk">
+</main>
+
+<section class="url-section">
+  <form class="url-shortner" id="form" return false>
+    <input type="url" name="url-inputer" id="url-shortner" placeholder="Shorten a link here...">
+    <button type="submit">Shorten It!</button>
+  </form>
+</section>
+
+<section class="results-container">
+  <section class="results-container-style">
+    <span id="orginalLink">url link here</span>
+    <div class="right-side-results">
+      <a href=""target="_blank" id="shortLink">short code link here</a>
+      <button id="copyUrl">Copy</button>
+    </div>
+  </section>
+</section>
+
+
+<section class="statistics-section">
+  
+  <h2>Advanced Statistics</h2>
+
+  <p>
+    Track how your links are performing across the web with our
+    advanced statistics dashboard.
+  </p>
+<section class="card-section cross">
+    <div class="card">
+      <div class="circle"><img src="images/icon-brand-recognition.svg" alt=""></div>
+      <h3>Brand Recognition</h3>
+      <p>
+        Boost your brand recognition with each click. Generic links don’t
+        mean a thing. Branded links help instil confidence in your content.
+      </p>
+    </div>
+  
+    <div class="card line">
+      <div class="circle"><img src="images/icon-detailed-records.svg" alt=""></div>
+      <h3>Detailed Records</h3>
+      <p>
+        Gain insights into who is clicking your links. Knowing when and where
+        people engage with your content helps inform better decisions.
+      </p>
+    </div>
+  
+    <div class="card line">
+      <div class="circle"><img src="images/icon-fully-customizable.svg" alt=""></div>
+      <h3>Fully Customizable</h3>
+      <p>
+        Improve brand awareness and content discoverability through customizable
+        links, supercharging audience engagement.
+      </p>
+    </div>
+</section>
+</section>
+
+<section class="boost-section">
+  <h2>Boost your links today</h2>
+
+  <a href="">Get Started</a>
+</section>
+<footer>
+<img src="images/logo.svg" alt="Shortly">
+
+  <ul>
+      <li><span>Features</span></li>
+      <li><a href="/">Link Shortening</a></li>
+      <li><a href="/">Branded Links</a></li>
+      <li><a href="/">Analytics</a></li>
+  </ul>
+  
+  <ul>
+    
+      <li><span>Resources</span></li>
+      <li><a href="">Blog</a></li>
+      <li><a href="">Developers</a></li>
+      <li><a href="">Support</a></li>
+    
+  </ul>
+
+  <ul>
+      <li><span>Company</span></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Our Team</a></li>
+      <li><a href="">Careers</a></li>
+      <li><a href="">Contact</a></li>
+  </ul>
+
+  <ul class="icon-list">
+    <li><a href=""><img src="images/icon-facebook.svg" alt="icon-facebook"></a></li>
+    <li><a href=""><img src="images/icon-twitter.svg" alt="icon-twitter"></a></li>
+    <li><a href=""><img src="images/icon-pinterest.svg" alt="icon-pinterest"></a></li>
+    <li><a href=""><img src="images/icon-instagram.svg" alt="icon-instagram"></a></li>
+</ul>
+
+</footer>
+
+  <script src="main.js"></script>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Dweller Parker</a>.
+  </div>
+</body>
+</html>

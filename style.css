@@ -1,0 +1,548 @@
+/* universal changes for the entire doc */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.50%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding:0;
+}
+
+ul,header,main, .main-text,.url-shortner,.card-section,.boost-section, footer ,.circle,.card,.left-side-nav {
+    display: flex;
+}
+
+h1, h3, .statistics-section h2 {
+    color:hsl(257, 27%, 26%);
+}
+
+p {
+    color:hsl(257, 7%, 63%);
+}
+
+/* Header and Main */
+
+header {
+    align-items: center;
+    justify-content: space-between;
+    margin:1rem;
+}
+
+main {
+    flex-direction: column-reverse;
+    position: relative;
+    overflow: hidden;
+}
+
+main > img {
+    position: relative;
+    left: 25px;
+    width: 540px;
+
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+.main-text{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-text a {
+    display: inline-block;
+    border-radius:20px;
+    color:white;
+    background-color: hsl(180, 66%, 49%);
+    width:12rem;
+    height:3rem;
+    line-height: 3rem;
+}
+
+
+
+/* url shortner form/section */
+
+.url-section {
+    background: url(images/bg-shorten-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: right 0px;
+    background-color: hsl(257, 27%, 26%) ;
+    padding:1rem;
+    border-radius: 5px;
+}
+
+.url-section,.url-shortner {
+    margin:2rem
+}
+
+.url-shortner {
+   flex-direction: column;
+}
+
+.url-shortner input {
+    margin-bottom: 0.8rem;
+}
+
+.url-shortner button {
+    background-color: hsl(180, 66%, 49%);
+    border: none;
+    color:white;
+}
+
+.url-shortner button, .url-shortner input {
+    border-radius: 5px;
+    height:3.5rem;
+}
+
+/* results section */
+.results-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width:90%;
+    height:auto;
+    background-color: hsl(0, 0%, 90%);
+    position: relative;
+    top:0px;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 2rem;
+    border-radius: 5px;
+}
+.results-container-style {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    gap:1rem
+    
+  }
+  .results-container-style a {
+    color:hsl(180, 66%, 49%);
+  }
+  .results-container-style button {
+    background-color: hsl(180, 66%, 49%);
+    border: none;
+    color:white;
+    padding: 1rem;
+    width:100%;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1rem;
+  }
+  .results-container-style button:hover {
+    opacity: 0.5;
+  }
+ /* statistics section  */
+
+ .statistics-section {
+    background-color: hsl(0, 0%, 96%);
+    padding-bottom: 4rem;
+    position: relative;
+    z-index: 0;
+ }
+
+ .statistics-section h2, .statistics-section p {
+    text-align: center;
+ }
+
+ .card-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:5rem
+ }
+
+ .card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    width:80%;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 5rem;
+}
+
+.card img {
+    width:40px;
+    height:40px;
+}
+
+.circle {
+    background-color: hsl(257, 27%, 26%);
+    width:75px;
+    height:75px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-top: -37.5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.line::before {
+    content: "";
+    position: absolute;
+    top:-100px;
+    width: 10px;
+    height: 70px;
+    z-index: -1;
+    background-color: hsl(180, 66%, 49%);
+}
+
+/* boost section */
+
+.boost-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(images/bg-boost-mobile.svg);
+    background-color: hsl(257, 27%, 26%);
+    background-repeat: repeat-y;
+    background-position: right 0px;
+    padding:8rem;
+}
+
+.boost-section h2 {
+    color:white;
+}
+
+.boost-section a {
+    display: inline-block;
+    border-radius:20px;
+    color:white;
+    background-color: hsl(180, 66%, 49%);
+    width:12rem;
+    height:3rem;
+    line-height: 3rem;
+}
+
+
+
+/* footer section */
+
+footer {
+    background-color: hsl(260, 8%, 14%);
+    padding:2rem;
+}
+
+footer,footer ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer ul {
+    gap:1rem
+}
+
+footer ul li {
+    color:white;
+}
+footer a {
+    color:hsl(0, 0%, 75%);
+}
+
+.icon-list {
+    flex-direction: row;
+}
+
+footer > img {
+    filter: invert(100%);
+    position: relative;
+    z-index: 1;
+}
+
+
+/* hidden desktop portion */
+
+   .auth-links {
+    display:none;
+}
+
+/* mobile menu */
+.mobile-nav {
+    /* Mobile navigation styles go here */
+    position: fixed;
+    inset: 0 0 0 55%;
+    display: none;
+    flex-direction: column;
+    z-index: 8;
+    background-color: hsl(257, 27%, 26%, 0.5);
+    backdrop-filter: blur(0.8rem);
+    font-size: 2rem;
+    
+  }
+
+  .mobile-nav > ul {
+    flex-direction: column;
+    display: flex;
+    padding:15rem 2em;
+    gap:3rem
+  }
+  .mobile-nav a {
+    color:hsl(0, 0%, 96%,0.9)
+  }
+
+  .mobile-toggle {
+    display: flex;
+    position: absolute;
+    z-index: 99;
+    top: 2rem;
+    right:1rem;
+
+  }
+  .main-nav,.mobile-toggle {
+    cursor: pointer;
+  }
+
+/* Styles for break points  */
+
+
+
+@media (max-width: 992px) {
+    header nav {
+        display: none;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    nav, .auth-links {
+        display:flex;
+    }
+    .auth-links ~ img {
+        display: none;
+    }
+    header a {
+        color:hsl(257, 7%, 63%);
+    }
+    header a:hover {
+        color:hsl(260, 8%, 14%);
+    }
+    header {
+        justify-content: space-around;
+        align-items: center;
+    }
+    .left-side-nav {
+        justify-content: center;
+        align-items: center;
+        gap:5rem;
+    }
+    nav > ul {
+        gap:3rem;
+    }
+    nav {
+        justify-items: flex-start;
+    }
+    .auth-links {
+        align-items: center;
+        gap:3rem;   
+    }
+    .sign-up a {
+        display: inline-block;
+        border-radius: 20px;
+        color: white;
+        background-color: hsl(180, 66%, 49%);
+        padding: 0.7rem;
+        margin-right: 1rem;
+      }
+      .sign-up a:hover {
+        color: white;
+        opacity: 0.5;
+      }
+    /* main section */
+    main {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-bottom:10rem;
+    }
+    .main-text h1 {
+        font-size: 6rem;
+    }
+    .main-text h1, .main-text p {
+        text-align: left;
+    }
+    .main-text{
+        width:500px;
+    } 
+    .main-text a:hover {
+        opacity:0.5;
+    }
+    /* url shortner */
+    .url-section {
+        background: url(images/bg-shorten-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: right 0px;
+        background-color: hsl(257, 27%, 26%) ;
+        padding:2rem;
+        border-radius: 5px;
+        width:70%;
+        margin:0 auto;
+        position: relative;
+        top: 100px; 
+        z-index: 2;
+    }  
+    .url-shortner {
+       flex-direction: row;
+       align-content: center;
+       justify-content: center;
+    }
+    
+    .url-shortner input {
+        margin-right: 2rem;
+        width:80%;
+    }
+    
+    .url-shortner button {
+        background-color: hsl(180, 66%, 49%);
+        border: none;
+        color:white;
+        padding: 1rem;
+        width: 15%;
+        cursor: pointer;
+    }
+    
+    .url-shortner button, .url-shortner input {
+        height:4rem;
+    }
+
+    .url-shortner button:hover {
+        opacity: 0.7;
+    }
+    /* result section going to fetch api */
+    .results-container {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width:70%;
+        height:50px;
+        background-color: hsl(0, 0%, 90%);
+        position: relative;
+        top:108px;
+        z-index: 2;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 2rem;
+        border-radius: 5px;
+    }
+    .results-container-style {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        flex-direction: row;
+        padding: 4rem;
+        width: 100%;
+        
+      }
+      .results-container-style a {
+        color:hsl(180, 66%, 49%);
+        margin-right: 1rem;
+      }
+      .results-container-style button {
+        background-color: hsl(180, 66%, 49%);
+        border: none;
+        color:white;
+        padding: 1rem;
+        width:6.5rem;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      .results-container-style button:hover {
+        opacity: 0.5;
+      }
+    /*card section */
+     .card-section {
+        flex-direction: row;
+    }
+    .line::before {
+        display: none;
+    }
+    .card {
+        position: relative;
+        text-align: left;
+        width:50%;
+      }
+      .card:nth-of-type(2) {
+        top: 50px;
+        left: 50px;
+      }
+      
+      .card:nth-of-type(3) {
+        top: 100px;
+        left: 100px;
+      }
+      .cross::after {
+        content: "";
+        position: absolute;
+        width: 70%;
+        height: 10px;
+        bottom:220px;
+        right: 100px;
+        background-color: hsl(180, 66%, 49%);
+        z-index: -1;
+        margin: 0 auto;
+      }
+      .statistics-section {
+        padding:16rem;
+        position: relative;
+      }
+      .statistics-section p {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+    /* boost section */
+    .boost-section {
+        background: url(images/bg-boost-desktop.svg);
+        background-color: hsl(257, 27%, 26%);
+        background-repeat: repeat-y;
+        background-position: right 0px;
+        padding:5rem;
+    }
+    .boost-section a:hover {
+        opacity: 0.7;
+    }
+    /*footer section */
+    footer{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    footer ul {
+        align-items: flex-start;
+    }
+    .icon-list {
+        align-items: center;
+    }
+    footer ul a:hover {
+        color:hsl(180, 66%, 49%);
+    }
+    
+  }
